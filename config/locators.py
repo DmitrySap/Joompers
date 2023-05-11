@@ -55,5 +55,6 @@ class SettingsLocators:
     OTHER = (By.NAME, 'Other')
     COUNTRY = (By.CSS_SELECTOR, '.css-8mmkcg')
     COUNTRY_CANADA = (By.ID, 'react-select-3-option-39')
+    COUNTRY_ARUBA = (By.ID, 'react-select-3-option-0')
     SAVE_BTN = (By.CSS_SELECTOR, '.ProfileSettingsPage_btnGroup__JPkH5 > button:nth-child(2)')
     SAVE_SETTINGS = (By.CSS_SELECTOR, '.ProfileSettingsPage_btnGroup__JPkH5 > .CustomButton_btn__tVfG5:nth-child(2)')

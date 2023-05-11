@@ -1,10 +1,8 @@
 import pytest
-import time
 from selenium.common import NoSuchElementException
 from pages.profile_page import ProfilePage
 from pages.settings_page import SettingsPage
 from pages.main_page import MainPage
-from config.locators import ProfileLocators
 from config.config import EditProfile
 
 
@@ -178,11 +176,14 @@ class TestEditProfile:
         finally:
             main_page.go_to_logout()
 
-    """Choose Canada country, male gender"""
+    """Choose Canada, Aruba country, male gender"""
     def test_edit_settings(self, browser, go_to_login):
         main_page = MainPage(browser, self)
         main_page.go_to_settings()
         settings_page = SettingsPage(browser, self)
-        settings_page.choose_country()
+        settings_page.choose_country_canada()
         settings_page.male_gender()
+        settings_page.female_gender()
+        settings_page.other_gender()
+        settings_page.choose_country_aruba()
         settings_page.save_settings()

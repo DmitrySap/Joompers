@@ -15,11 +15,17 @@ class SettingsPage(BasePage):
         other_gender = self.browser.find_element(*SettingsLocators.OTHER)
         other_gender.click()
 
-    def choose_country(self):
+    def choose_country_canada(self):
         choose_country = self.browser.find_element(*SettingsLocators.COUNTRY)
         choose_country.click()
         canada = self.browser.find_element(*SettingsLocators.COUNTRY_CANADA)
         canada.click()
+
+    def choose_country_aruba(self):
+        choose_country = self.browser.find_element(*SettingsLocators.COUNTRY)
+        choose_country.click()
+        aruba = self.browser.find_element(*SettingsLocators.COUNTRY_ARUBA)
+        aruba.click()
 
     def save_settings(self):
         save_settings = self.browser.find_element(*SettingsLocators.SAVE_SETTINGS)

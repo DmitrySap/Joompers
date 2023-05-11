@@ -1,7 +1,5 @@
 from pages.base_page import BasePage
 from config.locators import ProfileLocators
-from config.config import EditProfile
-import time
 
 
 class ProfilePage(BasePage):

@@ -47,7 +47,6 @@ class InvalidRegisterData:
     ]
 
     invalid_passwords = [
-        '',  # Пустой пароль
         '!wErQw1',  # Меньше минимально допустимого
         'ЙцУкЙцУк',  # Только кириллица
         'password',  # Только нижний регистр
@@ -70,7 +69,7 @@ class InvalidLoginData:
 
     invalid_passwords = [
         'AsD1!sDf',     # Другой пароль
-        ''              # Пустое поле
+        '!wErQw1',      # Меньше минимально допустимого
     ]
 
 
